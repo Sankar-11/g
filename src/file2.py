@@ -8,9 +8,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 import dagshub
-dagshub.init(repo_owner='vikashdasXXX', repo_name='YT-MLOPS-Experiments-with-MLFlow', mlflow=True)
-
-mlflow.set_tracking_uri("https://dagshub.com/vikashdas770/")
+dagshub.init(repo_owner='srinivasareddym176', repo_name='g', mlflow=True)
+mlflow.set_tracking_uri("https://dagshub.com/srinivasareddym176/g.mlflow")
 
 # Load Wine dataset
 wine = load_wine()
@@ -25,7 +24,7 @@ max_depth = 8
 n_estimators = 5
 
 # Mention your experiment below
-mlflow.set_experiment('YT-MLOPS-Exp2')
+mlflow.set_experiment('YT-MLOPS-Exp1')
 
 with mlflow.start_run():
     rf = RandomForestClassifier(max_depth=max_depth, n_estimators=n_estimators, random_state=42)
